@@ -6,6 +6,6 @@ package com.ray.design.patterns.strategy.weapon;
  */
 public interface WeaponBehavior {
 
-    void useWeapon();
+    String useWeapon();
 
 }
