@@ -8,6 +8,7 @@ import com.ray.design.patterns.decorator.condiment.Whip;
 import com.ray.design.patterns.decorator.size.Tall;
 
 /**
+ * 装饰者模式 - 动态地将责任附加到对象上。想要扩展功能，装饰者提供有别与继承的另一种选择。
  * Created by dangdang on 4/30/16.
  */
 public class CoffeeMain {
