@@ -15,6 +15,7 @@ public abstract class Characters {
     abstract String name();
 
     public void flight() {
+
         String weapon = "不使用武器";
         String transportation = "";
         if (weaponBehavior != null) {

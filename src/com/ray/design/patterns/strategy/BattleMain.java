@@ -1,9 +1,6 @@
 package com.ray.design.patterns.strategy;
 
-import com.ray.design.patterns.strategy.character.Characters;
-import com.ray.design.patterns.strategy.character.GoblinBarrel;
-import com.ray.design.patterns.strategy.character.KnifeGoblins;
-import com.ray.design.patterns.strategy.character.SpearGoblins;
+import com.ray.design.patterns.strategy.character.*;
 
 /**
  * 策略模式 - 定义了算法族, 分别封装起来,让他们之间可以互相替换,此模式让算法的变化独立于使用算法的客户。
@@ -16,12 +13,12 @@ public class BattleMain {
 
         System.out.println("战斗开始...\n");
 
-        Characters knife = new KnifeGoblins();
-        knife.flight();
+//        Characters knife = new KnifeGoblins();
+//        knife.flight();
         Characters spear = new SpearGoblins();
         spear.flight();
-        Characters barrel = new GoblinBarrel();
-        barrel.flight();
+//        Characters barrel = new GoblinBarrel();
+//        barrel.flight();
 
         System.out.println("\n打扫战场...");
 
