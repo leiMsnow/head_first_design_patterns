@@ -10,6 +10,12 @@ public class MenuItem {
     boolean vegetarian;
     double price;
 
+    public MenuItem(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
     public MenuItem(boolean vegetarian, String name, String description, double price) {
         this.vegetarian = vegetarian;
         this.name = name;
@@ -47,5 +53,10 @@ public class MenuItem {
 
     public void setVegetarian(boolean vegetarian) {
         this.vegetarian = vegetarian;
+    }
+
+    @Override
+    public String toString() {
+        return name + " --- " + description + "\t\t" + price;
     }
 }
