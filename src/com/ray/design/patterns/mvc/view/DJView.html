@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<jsp:useBean id="beatModel" scope="request" class="com.ray.design.patterns.mvc.model.BeatModel" xmlns:jsp="http://java.sun.com/JSP/Page"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DJ View</title>
+</head>
+<body>
+
+<h1>DJ View</h1>
+Beats per minutes = <jsp:getProperty name="beatModel" property="BPM" xmlns:jsp="http://java.sun.com/JSP/Page"/>
+<br/>
+<hr>
+<br/>
+
+<form method="post" action="/djview/servlet/WebView">
+    BPM:<input type="text" name="bpm" value="<jsp:getProperty name='beatModel'
+        property='BPM'/>">
+
+
+</form>
+
+</body>
+</html>
