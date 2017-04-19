@@ -6,7 +6,7 @@ package com.ray.design.patterns.singleton;
  */
 public class ChocolateBoiler {
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
         ChocolateBoiler.getInstance();
 
